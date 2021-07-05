@@ -1,0 +1,32 @@
+$main-color:#323264;
+$main-alt-color: #46466e;
+$main-soft-color: #686887;
+$accent-color: #f0145a;
+$active-regular-color: #24a3ff;
+$active-hover-color:#0085ff;
+$active-color:#006ccf;
+$grey-bg-color: #f5f5fa;
+$grey-bg-alt-color: #ededf7;
+$grey-text-color: #b3b3ba;
+$grey-separator-color: #e6e6f0;
+$main-font: 'TT Norms', sans-serif;
+
+$grid-brekpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1360x
+);
+
+$grid-gutter-width: 40px;
+$grid-gutter-half-width: $grid-gutter-width/2;
