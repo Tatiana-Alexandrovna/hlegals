@@ -1,0 +1,32 @@
+.hero-font{font-weight: bold;
+  font-size: 42px;
+  line-height: 1.2;
+  color: $gradient-red;
+}
+.h2-font{
+  font-size: 32px;
+  line-height: 1.18;
+  color: $main-color;
+}
+.h3-font{
+  font-size: 24px;
+  line-height: 1.16;
+  color: $main-color;
+}
+.h3-caps-font{
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+.h4-font{
+  font-size: 18px;
+  line-height: 1.16;
+  color: $main-color;
+}
+.paragraph,
+.unordered-list{
+  font-size: 18px;
+  line-height: 1.4;
+}
