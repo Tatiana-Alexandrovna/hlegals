@@ -2266,6 +2266,11 @@ button {
   color: #b3b3ba;
 }
 
+.toggle-lang__link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .toggle-lang__link-active {
   background-color: #f0145a;
   font-weight: 700;
@@ -2291,7 +2296,7 @@ button {
   font-size: 16px;
   line-height: 1.1875;
   color: #fff;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .desktop-nav__list {
@@ -2329,7 +2334,7 @@ button {
 }
 
 .header-info-list-item {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .header-info-list-item:after {
@@ -2339,7 +2344,11 @@ button {
   width: 6px;
   border-radius: 50%;
   background-color: #E6E6F0;
-  margin-right: 5px;
+  margin-left: 8px;
+}
+
+.header-info-list-item:last-child:after {
+  display: none;
 }
 
 .home-hero-section {

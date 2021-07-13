@@ -13,6 +13,10 @@
   padding: 5px 6px;
   border-radius: 8px;
   color: $grey-text-color;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .toggle-lang__link-active{
   background-color: $accent-color;
@@ -35,7 +39,7 @@
   font-size: 16px;
   line-height: (19/16);
   color: #fff;
-  font-weight: normal;
+  font-weight: 400;
 }
 .desktop-nav__list{
   display: flex;
@@ -62,7 +66,7 @@
   font-size: 24px;
 }
 .header-info-list-item{
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .header-info-list-item:after{
   content: "";
@@ -71,5 +75,8 @@
   width: 6px;
   border-radius:50%;
   background-color: #E6E6F0;
-  margin-right:5px;
+  margin-left:8px;
+}
+  .header-info-list-item:last-child:after{
+  display: none;
 }
