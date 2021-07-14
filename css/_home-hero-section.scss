@@ -1,4 +1,52 @@
 .home-hero-section{
-  height: 100vh;
-  background:$gradient-soft;
+  min-height: 640px;
+  border-bottom: 40px;
+  background-image: $gradient-soft, url(../images/bg_hero.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+  background-blend-mode: overlay;
+}
+.hero-section-title{
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  padding-top: 210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-section-title{
+  @include media-breakpoint-up(md){
+    padding-top: 230px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+.hero-section-title{
+  @include media-breakpoint-up(xl){
+    padding-top: 310px;
+    margin-left: 120px;
+    margin-right: 120px;
+    }
+  }
+.home-hero-scroll-button{
+  position: absolute;
+  top: 578px;
+  left: calc(50% - 18px/2);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 9px 10px 7px;
+}
+.home-hero-section{
+  @include media-breakpoint-up(xl){
+    background-image:  $gradient-soft, url(../images/bg_hero2.svg),url(../images/bg-hero-desk.svg);
+    min-height: 1000px;
+    background-position: center;
+  }
+}
+.home-hero-scroll-button{
+  @include media-breakpoint-up(xl){
+    top: 740px;
+  }
 }

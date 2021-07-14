@@ -1,0 +1,168 @@
+.experience-section{
+  background: $gradient-super-soft;
+  border-radius: 0px 0px 12px 12px;
+  padding-bottom: 20px;
+}
+
+.experience-list__link{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: (17/14);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $grey-text-color;
+  margin-bottom: 20px;
+}
+.experience-list__link-active{
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: $gradient-red-text;
+}
+.experience-list{
+  @include media-breakpoint-up(xl){
+  text-align: right;
+  padding-right: 40px;
+  padding-left: 50px;
+  border-right: 4px solid $grey-separator-color;
+  }
+}
+.experience-list__link,
+.experience-list__link-active{
+  @include media-breakpoint-up(xl){
+  text-transform: none;
+  font-size: 42px;
+  line-height: (50/42);
+  }
+}
+.experience-title{
+  font-size: 22px;
+  line-height: (26/22);
+  color: #fff;
+  @include media-breakpoint-up(xl){
+    font-size: 32px;
+    line-height: (38/32);
+  }
+}
+.experience-list-text{
+  font-size: 18px;
+  line-height: (26/18);
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  @include media-breakpoint-up(xl){
+    font-size: 21px;
+    line-height: (30/21);
+  }
+}
+.experience-bullets{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
+  }
+.experience-bullets_button{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $active-regular-color;
+  opacity: 0.2;
+}
+.experience-bullets__item{
+  margin-right: 14px;
+}
+.experience-bullets_button:active{
+  opacity: 1;
+}
+.services{
+  margin-top: 45px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: (17/14);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+}
+.services-title{
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: (38/32);
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: $gradient-red-text;
+  }
+.services-list__card-title{
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: (21/18);
+  color:$active-regular-color;
+  @include media-breakpoint-up(xl){
+    font-size: 24px;
+    line-height: (28/24);
+    padding: 20px 0 5px;
+  }
+  }
+.services-list__card-text{
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: (22/16);
+  color: #fff;
+  @include media-breakpoint-up(xl){
+    font-size: 18px;
+    line-height: (26/18);
+  }
+}
+.services-list__item{
+  margin-bottom: 24px;
+  @include media-breakpoint-up(xl){
+  padding-right: 10px;
+  padding-left: 10px;
+  }
+}
+.services-list__card-img{
+  max-width: 64px;
+  max-height: 64px;
+  @include media-breakpoint-up(xl){
+    max-width: 92px;
+    max-height: 92px;
+  }
+}
+.experience-wrap{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  @include media-breakpoint-up(xl){
+    flex-direction: row;
+    align-items: center
+  }  
+}
+.experience-text-wrap{
+  @include media-breakpoint-up(xl){
+  padding-left: 40px;
+  padding-top: 20px;
+  }
+}
+.services-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-list__item{
+  @include media-breakpoint-up(xl){
+  width: 33%;
+  margin-top: 48px;
+  } 
+}
+.services-list__card-wrap{
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-up(xl){
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
