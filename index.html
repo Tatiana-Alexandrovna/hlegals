@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="hlegals">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Hlegals</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="hlegals">
+  <link rel="stylesheet" href="./icomoon/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Hlegals</title>
 </head>
 <body>
+  <header class="main-header">
+    <div class="container d-none d-xl-block header-desktop">
+      <div class="row">
+        <div class="col-3">
+          <a href="/" aria-label="home page">
+            <img src="./images/Logo Mobile.svg" width="350px" height="62px" alt="hlegals logo" aria-hidden="true">
+            </a>
+        </div>
+        <div class="col-7 offset-2">
+            <ul class="header-info-list d-flex justify-content-end align-items-center">
+              <li class="header-info-list-item">
+                <ul class="toggle-lang">
+                  <li class="toggle-lang__list-item">
+                    <a href="" class=" toggle-lang__link toggle-lang__link-active">УК</a>
+                  </li>
+                  <li class="toggle-lang__list-item">
+                    <a href="" class="toggle-lang__link toggle-lang__link--modifier">РУ</a>
+                  </li>
+                  <li class="toggle-lang__list-item">
+                    <a href="" class=" toggle-lang__link toggle-lang__link--modifier">EN</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-info-list-item">
+                <span class="nav-address">Одеса, Адміральський пр., 3</span>
+              </li>
+              <li class="header-info-list-item">
+                <a href="tel:+380503901595" class="header-phone header-phone--modifier">+38 (050) 390 15 95</a>
+              </li>
+              <li class="header-info-list-item">
+                <span class="icon-facebook header-icon"></span>
+              </li>
+            </ul>
+          <nav class="desktop-nav">
+            <ul class="desktop-nav__list">
+              <li class="desktop-nav__list-item">
+                <a href="./about.html" class="desktop-nav__link"> про нас</a>
+              </li>
+              <li class="desktop-nav__list-item">
+                <a href="./services.html" class="desktop-nav__link"> послуги</a>
+              </li>
+              <li class="desktop-nav__list-item">
+                <a href="./team.html" class="desktop-nav__link">команда</a>
+              </li>
+              <li class="desktop-nav__list-item">
+                <a href="./publications.html" class="desktop-nav__link"> публікації</a>
+              </li>
+              <li class="desktop-nav__list-item">
+                <a href="./contact.html" class="desktop-nav__link">контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container d-xl-none">
+      <div class="d-flex justify-content-between align-items-center">
+        <ul class="toggle-lang">
+          <li class="toggle-lang__list-item">
+            <a href="" class=" toggle-lang__link toggle-lang__link-active">УК</a>
+          </li>
+          <li class="toggle-lang__list-item">
+            <a href="" class=" toggle-lang__link">РУ</a>
+          </li>
+          <li class="toggle-lang__list-item">
+            <a href="" class=" toggle-lang__link">EN</a>
+          </li>
+        </ul>
+        <a href="tel:+380503901595" class="header-phone">+38 (050) 390 15 95</a>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="/" aria-label="home page">
+        <img src="./images/Logo Mobile.svg" alt="hlegals logo" aria-hidden="true">
+        </a>
+        <button type="button"  data-toggle="modal" data-target="#nav_modal"  class="nav-button d-xl-none">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 10H25" stroke="white" stroke-width="2"/>
+            <path d="M7 16H25" stroke="white" stroke-width="2"/>
+            <path d="M7 22H25" stroke="white" stroke-width="2"/>
+            </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="home-hero-section">
 
+    </section>
+  </main>
+  <div class="modal fade" id="nav_modal" tabindex="-1" aria-label="navigation" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+          <button type="button" class="modal-nav-close-button " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__list-item">
+              <a href="./about.html" class="mobile-nav__link"> про нас</a>
+            </li>
+            <li class="mobile-nav__list-item">
+              <a href="./services.html" class="mobile-nav__link"> послуги</a>
+            </li>
+            <li class="mobile-nav__list-item">
+              <a href="./team.html" class="mobile-nav__link">команда</a>
+            </li>
+            <li class="mobile-nav__list-item">
+              <a href="./publications.html" class="mobile-nav__link"> публікації</a>
+            </li>
+            <li class="mobile-nav__list-item">
+              <a href="./contact.html" class="mobile-nav__link">контакти</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./bootstrap/js/dist/util.js"></script>
+  <script src="./bootstrap/js/dist/modal.js"></script>
 </body>
 </html>
