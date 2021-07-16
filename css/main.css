@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/TTNorms-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/TTNorms-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/TTNorms-Bold.woff2") format("woff2");
+}
+
 *,
 *:before,
 *:after {
@@ -24,6 +48,10 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 *,
@@ -2166,6 +2194,10 @@ button {
   background-color: transparent;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .hero-font {
   font-weight: bold;
   font-size: 42px;
@@ -2279,7 +2311,12 @@ button {
   text-decoration: none;
 }
 
-.toggle-lang__link-active {
+.toggle-lang__link--modifier:hover {
+  font-weight: 700;
+}
+
+.toggle-lang__link--active,
+.toggle-lang__link:active {
   background-color: #f0145a;
   font-weight: 700;
   color: #e6e6f0;
@@ -2317,7 +2354,7 @@ button {
   padding-top: 18px;
 }
 
-.desktop-nav__list-item {
+.desktop-nav__list--item {
   padding-left: 15px;
 }
 
@@ -2332,6 +2369,15 @@ button {
   color: #fff;
 }
 
+.desktop-nav__link:hover {
+  color: #f0145a;
+}
+
+.desktop-nav__link:active {
+  color: #f0145a;
+  text-decoration: underline;
+}
+
 .header-desktop {
   padding-top: 30px;
 }
@@ -2341,11 +2387,11 @@ button {
   font-size: 24px;
 }
 
-.header-info-list-item {
+.header-info-list--item {
   margin-left: 15px;
 }
 
-.header-info-list-item:after {
+.header-info-list--item:after {
   content: "";
   display: inline-block;
   height: 6px;
@@ -2355,7 +2401,7 @@ button {
   margin-left: 8px;
 }
 
-.header-info-list-item:last-child:after {
+.header-info-list--item:last-child:after {
   display: none;
 }
 
@@ -2413,6 +2459,16 @@ button {
   }
 }
 
+.home-hero-section:after {
+  content: '';
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  bottom: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.67%, rgba(50, 50, 100, 0)), to(#323264));
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+}
+
 @media (min-width: 1200px) {
   .home-hero-scroll-button {
     top: 740px;
@@ -2463,9 +2519,33 @@ button {
 }
 
 .experience-section {
+  position: relative;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
   padding-bottom: 20px;
+}
+
+.experience-section:after {
+  position: absolute;
+  z-index: -1;
+  border-radius: 0px 0px 12px 12px;
+  left: 3%;
+  height: 30px;
+  width: 95%;
+  content: '';
+  background: #cacadb;
+}
+
+.experience-section:before {
+  position: absolute;
+  z-index: -1;
+  border-radius: 0px 0px 12px 12px;
+  top: 100%;
+  left: 5%;
+  height: 20px;
+  width: 90%;
+  content: '';
+  background: #E7E7F2;
 }
 
 .experience-list__link {
@@ -2476,6 +2556,13 @@ button {
   text-transform: uppercase;
   color: #b3b3ba;
   margin-bottom: 20px;
+}
+
+.experience-list__link:hover, .experience-list__link:active {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
 .experience-list__link-active {
@@ -2514,6 +2601,10 @@ button {
     font-size: 32px;
     line-height: 1.1875;
   }
+}
+
+.experience-home-page {
+  padding-left: 20px;
 }
 
 .experience-list-text {
@@ -2698,5 +2789,28 @@ button {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icomoon/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
 }
 /*# sourceMappingURL=main.css.map */

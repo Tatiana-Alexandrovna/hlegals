@@ -45,6 +45,14 @@
     background-position: center;
   }
 }
+.home-hero-section:after{
+  content: '';
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  bottom: 40%;
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+}
 .home-hero-scroll-button{
   @include media-breakpoint-up(xl){
     top: 740px;
