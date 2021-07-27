@@ -1,63 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="EN">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="hlegals">
-  <link rel="stylesheet" href="./icomoon/style.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Hlegals</title>
 </head>
+
 <body>
   <header class="main-header">
     <div class="container d-none d-xl-block header-desktop">
       <div class="row">
         <div class="col-3">
-          <a href="/" aria-label="home page">
-            <img src="./images/Logo Mobile.svg" width="350px" height="62px" alt="hlegals logo" aria-hidden="true">
-            </a>
+          <a href="/" aria-label="домашня сторінка">
+            <img src="./images/Logo_mobile.svg" width="350" height="62" alt="hlegals logo" aria-hidden="true">
+          </a>
         </div>
         <div class="col-7 offset-2">
-            <ul class="header-info-list d-flex justify-content-end align-items-center">
-              <li class="header-info-list-item">
-                <ul class="toggle-lang">
-                  <li class="toggle-lang__list-item">
-                    <a href="" class=" toggle-lang__link toggle-lang__link-active">УК</a>
-                  </li>
-                  <li class="toggle-lang__list-item">
-                    <a href="" class="toggle-lang__link toggle-lang__link--modifier">РУ</a>
-                  </li>
-                  <li class="toggle-lang__list-item">
-                    <a href="" class=" toggle-lang__link toggle-lang__link--modifier">EN</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="header-info-list-item">
-                <span class="nav-address">Одеса, Адміральський пр., 3</span>
-              </li>
-              <li class="header-info-list-item">
-                <a href="tel:+380503901595" class="header-phone header-phone--modifier">+38 (050) 390 15 95</a>
-              </li>
-              <li class="header-info-list-item">
-                <span class="icon-facebook header-icon"></span>
-              </li>
-            </ul>
+          <ul class="header-info-list d-flex justify-content-end align-items-center">
+            <li class="header-info-list--item">
+              <ul class="toggle-lang">
+                <li class="toggle-lang__list-item">
+                  <a href="" class="toggle-lang__link toggle-lang__link--active"
+                    aria-label="обрати мову українську">УК</a>
+                </li>
+                <li class="toggle-lang__list-item">
+                  <a href="" class="toggle-lang__link toggle-lang__link--modifier"
+                    aria-label="обрати мову російську">РУ</a>
+                </li>
+                <li class="toggle-lang__list-item">
+                  <a href="" class="toggle-lang__link toggle-lang__link--modifier"
+                    aria-label="обрати мову англійську">EN</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-info-list--item">
+              <span class="nav-address">Одеса, Адміральський пр., 3</span>
+            </li>
+            <li class="header-info-list--item">
+              <a href="tel:+380503901595" class="header-phone header-phone--modifier">+38 (050) 390 15 95</a>
+            </li>
+            <li class="header-info-list--item">
+              <span class="icon-facebook header-icon"></span>
+            </li>
+          </ul>
           <nav class="desktop-nav">
             <ul class="desktop-nav__list">
-              <li class="desktop-nav__list-item">
+              <li class="desktop-nav__list--item">
                 <a href="./about.html" class="desktop-nav__link"> про нас</a>
               </li>
-              <li class="desktop-nav__list-item">
+              <li class="desktop-nav__list--item">
                 <a href="./services.html" class="desktop-nav__link"> послуги</a>
               </li>
-              <li class="desktop-nav__list-item">
+              <li class="desktop-nav__list--item">
                 <a href="./team.html" class="desktop-nav__link">команда</a>
               </li>
-              <li class="desktop-nav__list-item">
+              <li class="desktop-nav__list--item">
                 <a href="./publications.html" class="desktop-nav__link"> публікації</a>
               </li>
-              <li class="desktop-nav__list-item">
+              <li class="desktop-nav__list--item">
                 <a href="./contact.html" class="desktop-nav__link">контакти</a>
               </li>
             </ul>
@@ -69,64 +73,493 @@
       <div class="d-flex justify-content-between align-items-center">
         <ul class="toggle-lang">
           <li class="toggle-lang__list-item">
-            <a href="" class=" toggle-lang__link toggle-lang__link-active">УК</a>
+            <a href="" class="toggle-lang__link toggle-lang__link--active" aria-label="обрати мову українську">УК</a>
           </li>
           <li class="toggle-lang__list-item">
-            <a href="" class=" toggle-lang__link">РУ</a>
+            <a href="" class="toggle-lang__link" aria-label="обрати мову російську">РУ</a>
           </li>
           <li class="toggle-lang__list-item">
-            <a href="" class=" toggle-lang__link">EN</a>
+            <a href="" class="toggle-lang__link" aria-label="обрати мову англійську">EN</a>
           </li>
         </ul>
         <a href="tel:+380503901595" class="header-phone">+38 (050) 390 15 95</a>
       </div>
       <div class="d-flex justify-content-between align-items-center">
-        <a href="/" aria-label="home page">
-        <img src="./images/Logo Mobile.svg" alt="hlegals logo" aria-hidden="true">
+        <a href="/" aria-label="домашня сторінка">
+          <img src="./images/Logo_mobile.svg" alt="hlegals logo" aria-hidden="true">
         </a>
-        <button type="button"  data-toggle="modal" data-target="#nav_modal"  class="nav-button d-xl-none">
+        <button type="button" data-toggle="modal" data-target="#nav_modal" class="nav-button d-xl-none"
+          aria-label="кнопка навігації">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 10H25" stroke="white" stroke-width="2"/>
-            <path d="M7 16H25" stroke="white" stroke-width="2"/>
-            <path d="M7 22H25" stroke="white" stroke-width="2"/>
-            </svg>
+            <path d="M7 10H25" stroke="white" stroke-width="2" />
+            <path d="M7 16H25" stroke="white" stroke-width="2" />
+            <path d="M7 22H25" stroke="white" stroke-width="2" />
+          </svg>
         </button>
       </div>
     </div>
   </header>
   <main>
     <section class="home-hero-section">
-
+      <div class="container d-flex">
+        <h2 class="hero-section-title">системний адміністратор правових рішень</h2>
+        <button class="home-hero-scroll-button" aria-label="кнопка scroll далі">
+          <svg width="20" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1l9 9 9-9" stroke="#fff" stroke-width="2" /></svg>
+        </button>
+      </div>
+    </section>
+    <section class="experience-section">
+      <div class="container">
+        <div class="row">
+          <div class="experience-home-page">
+            <div class="experience-wrap">
+              <ul class="experience-list">
+                <li class="experience-list__item">
+                  <a href="" class="experience-list__link experience-list__link-active"
+                    aria-label="перейти на вкладення Послідовні">Послідовні</a>
+                </li>
+                <li class="experience-list__item">
+                  <a href="" class="experience-list__link d-none d-xl-block"
+                    aria-label="перейти на вкладення Клієнтоорієнтовані">Клієнтоорієнтовані</a>
+                </li>
+                <li class="experience-list__item">
+                  <a href="" class="experience-list__link d-none d-xl-block"
+                    aria-label="перейти на вкладення Інноваційні">Інноваційні</a>
+                </li>
+                <li class="experience-list__item">
+                  <a href="" class="experience-list__link d-none d-xl-block"
+                    aria-label="перейти на вкладення Бізнес-орієнтовані">Бізнес-орієнтовані
+                    юристи</a>
+                </li>
+              </ul>
+              <div class="experience-text-wrap">
+                <h2 class="experience-title">Перевертаємо уявлення про юридичні послуги</h2>
+                <p class="experience-list-text">Консолідуючи багаторічний досвід і практику, юристи компанії
+                  супроводжують складні проекти і досягають
+                  прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права
+                  в
+                  Україні.</p>
+              </div>
+            </div>
+            <ul class="experience-bullets">
+              <li class="experience-bullets__item  d-xl-none">
+                <button class="experience-bullets_button " aria-label="first slide experience"></button>
+              </li>
+              <li class="experience-bullets__item  d-xl-none">
+                <button class="experience-bullets_button" aria-label="second slide experience"></button>
+              </li>
+              <li class="experience-bullets__item  d-xl-none">
+                <button class="experience-bullets_button" aria-label="third slide experience"></button>
+              </li>
+              <li class="experience-bullets__item  d-xl-none">
+                <button class="experience-bullets_button" aria-label="fourth slide experience"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="services-home-page">
+          <a href="" class="services" aria-label="перейти до послуги">послуги ></a>
+          <h2 class="services-title">Що ми вміємо робити краще за інших?</h2>
+          <ul class="services-list">
+            <li class="services-list__item">
+              <a class="services-list__card">
+                <div class="services-list__card-wrap"><img src="./images/Icon_it.svg"
+                    alt="іконка IT та електронна комерція" class="services-list__card-img">
+                  <h4 class="services-list__card-title">IT та електронна комерція</h4>
+                </div>
+                <p class="services-list__card-text">Нескінчений потік договорів, податкові питання, трудові відносини,
+                  корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й
+                  багато, щоб наймати інхауз-юриста. </p>
+              </a>
+            </li>
+            <li class="services-list__item">
+              <a class="services-list__card" aria-label="перейти до послуги">
+                <div class="services-list__card-wrap"><img src="./images/Icon_escort.svg" alt="іконка з зображенням портфеля,
+              юридичний супровід" class="services-list__card-img">
+                  <h4 class="services-list__card-title">Комплексний щоденний
+                    юридичний супровід</h4>
+                </div>
+                <p class="services-list__card-text">До того ж, з часом робота стане однотипною і нецікавою для штатного
+                  юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері
+                  інформаційних технологій.</p>
+              </a>
+            </li>
+            <li class="services-list__item">
+              <a class="services-list__card" aria-label="перейти до послуги">
+                <div class="services-list__card-wrap"><img src="./images/Icon_str_relation.svg"
+                    alt="іконка корпоративні відносини" class="services-list__card-img">
+                  <h4 class="services-list__card-title">Структуризація корпоративних відносин</h4>
+                </div>
+                <p class="services-list__card-text">Замість просто надавати юридичні послуги, ми закріпимо юриста або
+                  цілу команду, які впишуться в повсякденне життя вашої компанії. </p>
+              </a>
+            </li>
+            <li class="services-list__item">
+              <a class="services-list__card" aria-label="перейти до послуги">
+                <div class="services-list__card-wrap"><img src="./images/Icon_build_rel.svg"
+                    alt="іконка договірні відносини" class="services-list__card-img">
+                  <h4 class="services-list__card-title">Побудовa договірних відносин</h4>
+                </div>
+                <p class="services-list__card-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний
+                  юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи
+                  замість очікування статусу update.</p>
+              </a>
+            </li>
+            <li class="services-list__item">
+              <a class="services-list__card" aria-label="перейти до послуги">
+                <div class="services-list__card-wrap"><img src="./images/Icon_save.svg" alt="іконка захист бізнесу"
+                    class="services-list__card-img">
+                  <h4 class="services-list__card-title">Захист бізнесу, інтелектуальної власності</h4>
+                </div>
+                <p class="services-list__card-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний
+                  юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи
+                  замість очікування статусу update.</p>
+              </a>
+            </li>
+            <li class="services-list__item">
+              <a class="services-list__card" aria-label="перейти до послуги">
+                <div class="services-list__card-wrap"><img src="./images/Icon_represetation.svg" alt="іконка cуд"
+                    class="services-list__card-img">
+                  <h4 class="services-list__card-title">Судове представництво</h4>
+                </div>
+                <p class="services-list__card-text">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний
+                  бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="team-section">
+      <div class="container">
+        <div class="d-flex direction-column">
+          <a href="./team.html" class="team-link d-xl-none">команда ></a>
+          <blockquote class="team-says d-xl-none">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+            вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</blockquote>
+          <div class="team-text-wrap-mobile d-flex">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="./images/photo-boss/photo-boss-desk/photo-boss.webp 1x, ./images/photo-boss/photo-boss-desk/photo-boss-2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width:1200px)"
+                srcset="./images/photo-boss/photo-boss-desk/photo-boss.jpg 1x, ./images/photo-boss/photo-boss-desk/photo-boss-2x.jpg 2x"
+                type="image/jpeg">
+              <source srcset="./images/photo-boss/photo-boss.webp 1x, ./images/photo-boss/photo-boss-2x.webp 2x"
+                type="image/webp" width='60' height='60'>
+              <source srcset="./images/photo-boss/photo-boss.jpg 1x, ./images/photo-boss/photo-boss-2x.jpg 2x"
+                type="image/jpeg" width='60' height='60'>
+              <img src="./images/photo-boss/photo-boss-desk/photo-boss.jpg" alt="фото Александр Александровсий"
+                class="team-photo" width="413" height="500">
+            </picture>
+            <div class="team text-wrap">
+              <a href="./team.html" class="team-link d-none d-xl-block">команда ></a>
+              <blockquote class="team-says d-none d-xl-block">Ми звикли брати на себе відповідальність та завжди
+                гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</blockquote>
+              <p class="team-name">Олександр Кац</p>
+              <p class="team-position">Керуючий партнер</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="team-bullets">
+        <li class="team-bullets__item">
+          <button class="team-bullets_button " aria-label="first slide team"></button>
+        </li>
+        <li class="team-bullets__item">
+          <button class="team-bullets_button" aria-label="second slide team"></button>
+        </li>
+        <li class="team-bullets__item">
+          <button class="team-bullets_button" aria-label="third slide team"></button>
+        </li>
+      </ul>
+    </section>
+    <section class="cases-section">
+      <div class="container">
+        <h3 class="sections-cases-name">Успішні кейси</h3>
+        <div class="cases-section-column-1">
+          <a class="case case-1">
+            <p class="cases-name">
+              Супровід проекту з купівлі-продажу сільськогосподарської продукції
+            </p>
+            <p class="company-case">Hillel IT School</p>
+          </a>
+          <a class="case case-2">
+            <p class="cases-name">
+              Підготовка комплексного юридичного висновку для європейського банку</p>
+            <p class="company-case">WannaBiz</p>
+          </a>
+          <a class="case case-3">
+            <p class="cases-name">
+              Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+            <p class="company-case">tapgerine</p>
+          </a>
+        </div>
+        <div class="cases-section-column-2">
+          <a class="case case-4">
+            <p class="cases-name">
+              Представництво інтересів великого зернотрейдера в податковому спорі</p>
+            <p class="company-case">3D LOOK</p>
+          </a>
+          <a class="case case-5">
+            <p class="cases-name">
+              Оскарження податкових повідомлень-рішень ДФС</p>
+            <p class="company-case">adtelligent</p>
+          </a>
+          <a class="case case-6">
+            <p class="cases-name">
+              Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+            <p class="company-case">Clikky</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="client-section">
+      <h3 class="title-client-section">Вже довіряють нам</h3>
+      <ul class="clients-list">
+        <li class="clients-list__item hillel-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/Hillel-logo.svg" class="clients-logo" alt="Hillel logo">
+          </a>
+        </li>
+        <li class="clients-list__item wanna-biz-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/wanna-biz.svg" class="clients-logo" alt="wannabiz logo">
+          </a>
+        </li>
+        <li class="clients-list__item tapgerine-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/targerine.svg" class="clients-logo" alt="tapgerine logo">
+          </a>
+        </li>
+        <li class="clients-list__item look-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/3dlook.svg" class="clients-logo" alt="3dlook logo">
+          </a>
+        </li>
+        <li class="clients-list__item eco-leasing-log">
+          <a href="" class="clients-list__cardo" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/ecolease.svg" class="clients-logo" alt="eco leasing logo">
+          </a>
+        </li>
+        <li class="clients-list__item clickky-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/clickky.svg" class="clients-logo" alt="clickky logo">
+          </a>
+        </li>
+        <li class="clients-list__item orangear-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/orangear.svg" class="clients-logo" alt="orangear logo">
+          </a>
+        </li>
+        <li class="clients-list__item infra-tek-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/infratek.svg" class="clients-logo" alt="infratek logo">
+          </a>
+        </li>
+        <li class="clients-list__item ultimate-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/ultimatecard.svg" class="clients-logo" alt="ultimate logo">
+          </a>
+        </li>
+        <li class="clients-list__item art-print-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/art-print.svg" class="clients-logo" alt="art-print logo">
+          </a>
+        </li>
+        <li class="clients-list__item city-park-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/city-park.svg" class="clients-logo" alt="city-park logo">
+          </a>
+        </li>
+        <li class="clients-list__item adtelligent-logo">
+          <a href="" class="clients-list__card" aria-label="перейти на сайт клієнту">
+            <img src="./images/list-logo/adtelligent.svg" class="clients-logo" alt="adtelligent logo">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="publications-section">
+      <div class="container">
+        <a href="" class="publications-link" aria-label="відкрити всі публікації">Публікації</a>
+        <h2 class="title-publications-section">Нам є що розповісти</h2>
+        <ul class="publications-list">
+          <li class="publications-list__item max-width">
+            <a href="" class="publications-list__item-card" aria-label="відкрити публікацію">
+              <p class="publications-list__item-name">Валютний контроль помер, хай живе валютний контроль!</p>
+              <p class="publications-list__item-date">14 червня</p>
+              <p class="publications-list__item-text d-none d-lg-block">Експерти проводять конференції, круглі столи та
+                іншого штибу заходи на тему «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають
+                пальці об «ctrl+c/ctrl+v».</p>
+            </a>
+          </li>
+          <li class="publications-list__item">
+            <a href="" class="publications-list__item-card" aria-label="відкрити публікацію">
+              <picture class="publications-list__item-img">
+                <source media="(min-width:1200px)"
+                  srcset="./images/associate/desktop/associate.webp 1x, ./images/associate/desktop/associate_2x.webp  2x"
+                  type="image/webp">
+                <source media="(min-width:1200px)"
+                  srcset="./images/associate/desktop/associate.jpg 1x, ./images/associate/desktop/associate_2x.jpg 2x"
+                  type="image/jpeg">
+                <source srcset="./images/associate/associate.webp 1x, ./images/associate/associate_2x.webp 2x"
+                  type="image/webp" width='335' height='188'>
+                <source srcset="./images/associate/associate.jpg 1x, ./images/associate/associate_2x.jpg 2x"
+                  type="image/jpeg" width='335' height='188'>
+                <img src="./images/associate/desktop/associate.jpg" alt="Equity associate"
+                  class="publications-list__item-img">
+              </picture>
+              <p class="publications-list__item-name">Equity associate</p>
+              <p class="publications-list__item-date">22 квітня</p>
+              <p class="publications-list__item-text d-none d-lg-block">На проектах я джун. При цьому я співвласник
+                юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…</p>
+            </a>
+          </li>
+          <li class="publications-list__item d-none d-lg-block">
+            <a href="" class="publications-list__item-card" aria-label="відкрити публікацію">
+              <picture class="publications-list__item-img">
+                <source media="(min-width:1200px)"
+                  srcset="./images/gdpr/desk/gdpr.webp 1x, ./images/gdpr/desk/gdpr_2x.webp  2x" type="image/webp">
+                <source media="(min-width1200px)"
+                  srcset="./images/gdpr/desk/gdpr.jpg 1x, ./images/gdpr/desk/gdpr_2x.jpg 2x" type="image/jpeg">
+                <source srcset="./images/gdpr/gdpr.webp 1x, ./images/gdpr/gdpr_2x.webp 2x" type="image/webp" width='335'
+                  height='188'>
+                <source srcset="./images/gdpr/gdpr.jpg 1x, ./images/gdpr/gdpr_2x.jpg 2x" type="image/jpeg" width='335'
+                  height='188'>
+                <img src="./images/gdpr/desk/gdpr.jpg" alt="GDBR на фоне круга из звезд"
+                  class="publications-list__item-img">
+              </picture>
+              <p class="publications-list__item-name">Штраф для «Корпорації добра»: що буде з Google та іншими за
+                порушення GDPR</p>
+              <p class="publications-list__item-date">29 вересня</p>
+              <p class="publications-list__item-text">І чому стягнення у 50 млн євро може стати доленосним прецедентом
+                За матеріалами Mind.ua 21 січня Національна комісія із захисту даних.</p>
+            </a>
+          </li>
+          <li class="publications-list__item  margin-top-170">
+            <a href="" class="publications-list__item-card" aria-label="відкрити публікацію">
+              <picture class="publications-list__item-img">
+                <source media="(min-width:1200px)"
+                  srcset="./images/people/desk/people.webp 1x, ./images/people/desk/people_2x.webp  2x"
+                  type="image/webp">
+                <source media="(min-width:1200px)"
+                  srcset="./images/people/desk/people.jpg 1x, ./images/people/desk/people_2x.jpg 2x" type="image/jpeg">
+                <source srcset="./images/people/people.webp 1x, ./images/people/people_2x.webp 2x" type="image/webp"
+                  width='335' height='188'>
+                <source srcset="./images/people/people.jpg 1x, ./images/people/people.jpg_2x.jpg 2x" type="image/jpeg"
+                  width='335' height='188'>
+                <img src="./images/people/desk/people.jpg" alt="люди показывающие язык"
+                  class="publications-list__item-img">
+              </picture>
+              <p class="publications-list__item-name">Заповіт міленіала</p>
+              <p class="publications-list__item-date">19 серпня</p>
+              <p class="publications-list__item-text d-none d-lg-block">Що і як передаватимуть у спадщину сучасні
+                влогери, опініон лідери і криптомільйонери Типовий спадок українського покоління Х виглядає так:
+                квартира у…</p>
+            </a>
+          </li>
+          <li class="publications-list__item d-none d-lg-block margin-top-80">
+            <a href="" class="publications-list__item-card" aria-label="відкрити публікацію">
+              <picture class="publications-list__item-img">
+                <source media="(min-width:1200px)"
+                  srcset="./images/monument/desk/monument.webp 1x, ./images/monument/desk/monument_2x.webp  2x"
+                  type="image/webp">
+                <source media="(min-width:1200px)"
+                  srcset="./images/monument/desk/monument.jpg 1x, ./images/monument/desk/monument_2x.jpg 2x"
+                  type="image/jpeg">
+                <source srcset="./images/monument/monument.webp 1x, ./images/monument/monument_2x.webp 2x"
+                  type="image/webp" width='335' height='188'>
+                <source srcset="./images/monument/monument.jpg 1x, ./images/monument/monument_2x.jpg 2x"
+                  type="image/jpeg" width='335' height='188'>
+                <img src="./images/monument/desk/monument.jpg" alt="монумент Независимости Украины"
+                  class="publications-list__item-img">
+              </picture>
+              <p class="publications-list__item-name d-none">Закон про мови: як зробити свій сайт відповідним</p>
+              <p class="publications-list__item-date d-none">19 серпня</p>
+              <p class="publications-list__item-text d-none">Наталія Кирик, керівник контент студії Wordfactory.ua
+                По-перше, це красиво! Це аргумент номер один на користь україномовного сайту. По-друге, це ефективно. У…
+              </p>
+            </a>
+          </li>
+          <li class="publications-list__item d-none d-lg-block margin-top-40">
+            <a href="" class="publications-list__item-card" aria-label="відкрити публікацію">
+              <picture class="publications-list__item-img">
+                <source media="(min-width:1200px)"
+                  srcset="./images/child/desk/child.webp 1x, ./images/child/desk/child_2x.webp  2x" type="image/webp">
+                <source media="(min-width:1200px)"
+                  srcset="./images/child/desk/child.jpg 1x, ./images/child/desk/child.jpg 2x" type="image/jpeg">
+                <source srcset="./images/child/child.webp 1x, ./images/child/child_2x.webp 2x" type="image/webp"
+                  width='335' height='188'>
+                <source srcset="./images/child/child.jpg 1x, ./images/child/child_2x.jpg 2x" type="image/jpeg"
+                  width='335' height='188'>
+                <img src="./images/child/desk/child.jpg" alt="ребенок с гитарой" class="publications-list__item-img">
+              </picture>
+              <p class="publications-list__item-name d-none">І чому стягнення у 50 млн євро може стати доленосним
+                прецедентом За матеріалами Mind.ua 21 січня Національна комісія із захисту даних.</p>
+              <p class="publications-list__item-date d-none">29 вересня</p>
+              <p class="publications-list__item-text d-none">Про що йде мова В червні цього року Верховна Рада внесла
+                зміни до Податкового кодексу України. Відтепер батьки, які отримують офіційну…</p>
+            </a>
+          </li>
+        </ul>
+        <div class="publications-button-wrap">
+          <button class="publications-more-button">Ще публікації</button>
+        </div>
+      </div>
     </section>
   </main>
-  <div class="modal fade" id="nav_modal" tabindex="-1" aria-label="navigation" aria-hidden="true">
+  <footer class="home-page-footer">
+    <div class="container d-flex direction-column">
+      <div class="address-wrap-desk">
+        <div class="address-wrap d-flex">
+          <p class="footer-address">Одеса, Адміральський пр., 3</p>
+          <a href="" class="footer-link-map" aria-label="відкрити адресу на мапі">Подивитися на мапі</a>
+        </div>
+        <p class="footer-copyright d-none d-lg-block">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+      </div>
+      <ul class="footer-list">
+        <li class="footer-list_item">
+          <span class="icon-facebook footer-icon"></span>
+        </li>
+        <li class="footer-list_item">
+          <a href="tel:+380503901591" class="footer-link-tel"> +38 (050) 390 15 91</a>
+        </li>
+        <li class="footer-list_item">
+          <a href="mailto:contact@hlegals.net" class="footer-link-mail">contact@hlegals.net</a>
+        </li>
+      </ul>
+      <p class="footer-copyright d-xl-none-lg">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+    </div>
+  </footer>
+  <div class="modal fade" id="nav_modal" tabindex="-1" aria-label="Навігація" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
           <div class="d-flex justify-content-end">
-          <button type="button" class="modal-nav-close-button " data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <nav class="mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__list-item">
-              <a href="./about.html" class="mobile-nav__link"> про нас</a>
-            </li>
-            <li class="mobile-nav__list-item">
-              <a href="./services.html" class="mobile-nav__link"> послуги</a>
-            </li>
-            <li class="mobile-nav__list-item">
-              <a href="./team.html" class="mobile-nav__link">команда</a>
-            </li>
-            <li class="mobile-nav__list-item">
-              <a href="./publications.html" class="mobile-nav__link"> публікації</a>
-            </li>
-            <li class="mobile-nav__list-item">
-              <a href="./contact.html" class="mobile-nav__link">контакти</a>
-            </li>
-          </ul>
-        </nav>
+            <button type="button" class="modal-nav-close-button " data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__list-item">
+                <a href="./about.html" class="mobile-nav__link"> про нас</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./services.html" class="mobile-nav__link"> послуги</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./team.html" class="mobile-nav__link">команда</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./publications.html" class="mobile-nav__link"> публікації</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./contact.html" class="mobile-nav__link">контакти</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -135,4 +568,5 @@
   <script src="./bootstrap/js/dist/util.js"></script>
   <script src="./bootstrap/js/dist/modal.js"></script>
 </body>
+
 </html>
