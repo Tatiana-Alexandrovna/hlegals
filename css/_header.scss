@@ -19,11 +19,15 @@
     text-decoration: none;
   }
 }
+<<<<<<< HEAD
 .toggle-lang__link--modifier:hover{
   font-weight: 700;
 }
 .toggle-lang__link--active,
 .toggle-lang__link:active{
+=======
+.toggle-lang__link--active{
+>>>>>>> a3ab4caef5d70251912e0a33a577bdc85d155281
   background-color: $accent-color;
   font-weight: 700;
   color: $grey-separator-color;

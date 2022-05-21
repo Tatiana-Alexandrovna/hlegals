@@ -1,14 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="hlegals">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Hlegals</title>
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="hlegals" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Hlegals</title>
+</head>
+
+<body>
+  <header class="main-header-alt">
+    <div class="container d-none d-xl-block header-desktop">
+      <div class="row">
+        <div class="col-3">
+          <a href="/" aria-label="домашня сторінка">
+            <img src="./images/Logo-about.svg" width="360" height="60" alt="hlegals logo" aria-hidden="true" />
+          </a>
+        </div>
+        <div class="col-7 offset-2">
+          <ul class="
+                header-info-list
+                d-flex
+                justify-content-end
+                align-items-center
+              ">
+            <li class="header-info-list--item">
+              <ul class="toggle-lang">
+                <li class="toggle-lang__list-item">
+                  <a href="" class="toggle-lang__link toggle-lang__link--active"
+                    aria-label="обрати мову українську">УК</a>
+                </li>
+                <li class="toggle-lang__list-item">
+                  <a href="" class="toggle-lang__link" aria-label="обрати мову російську">РУ</a>
+                </li>
+                <li class="toggle-lang__list-item">
+                  <a href="" class="toggle-lang__link" aria-label="обрати мову англійську">EN</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-info-list--item">
+              <span class="nav-address-alt">Одеса, Адміральський пр., 3</span>
+            </li>
+            <li class="header-info-list--item">
+              <a href="tel:+380503901595" class="header-phone">+38 (050) 390 15 95</a>
+            </li>
+            <li class="header-info-list--item">
+              <span class="icon-facebook header-icon-alt"></span>
+            </li>
+          </ul>
+          <nav class="desktop-nav">
+            <ul class="desktop-nav__list">
+              <li class="desktop-nav__list--item">
+                <a href="./about.html" class="desktop-nav__link-alt current-page">
+                  про нас</a>
+              </li>
+              <li class="desktop-nav__list--item">
+                <a href="./services.html" class="desktop-nav__link-alt">
+                  послуги</a>
+              </li>
+              <li class="desktop-nav__list--item">
+                <a href="./team.html" class="desktop-nav__link-alt">команда</a>
+              </li>
+              <li class="desktop-nav__list--item">
+                <a href="./publications.html" class="desktop-nav__link-alt">
+                  публікації</a>
+              </li>
+              <li class="desktop-nav__list--item">
+                <a href="./contact.html" class="desktop-nav__link-alt">контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container d-xl-none">
+      <div class="d-flex justify-content-between align-items-center">
+        <ul class="toggle-lang">
+          <li class="toggle-lang__list-item">
+            <a href="" class="toggle-lang__link toggle-lang__link--active" aria-label="обрати мову українську">УК</a>
+          </li>
+          <li class="toggle-lang__list-item">
+            <a href="" class="toggle-lang__link" aria-label="обрати мову російську">РУ</a>
+          </li>
+          <li class="toggle-lang__list-item">
+            <a href="" class="toggle-lang__link" aria-label="обрати мову англійську">EN</a>
+          </li>
+        </ul>
+        <a href="tel:+380503901595" class="header-phone">+38 (050) 390 15 95</a>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="/" aria-label="домашня сторінка">
+          <img src="./images/Logo-about.svg" width="180" height="30" alt="hlegals logo" aria-hidden="true" />
+        </a>
+        <button type="button" data-toggle="modal" data-target="#nav_modal" class="nav-button d-xl-none"
+          aria-label="кнопка навігації">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 10H25" stroke="#323264" stroke-width="2" />
+            <path d="M7 16H25" stroke="#323264" stroke-width="2" />
+            <path d="M7 22H25" stroke="#323264" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about-hero-section">
+      <div class="container flex-hero-section-about">
+        <div class="flex-element-hero-section-about">
+          <h2 class="title-hero-section">
+            Перевертаємо уявлення про юридичні послуги.
+          </h2>
+          <p class="text-about-hero-section">
+            Консолідуючи багаторічний досвід і практику, юристи компанії
+            супроводжують складні проекти і досягають прийняття ряду важливих
+            для галузі рішень. Багато з них формують практику застосування
+            морського права в Україні.
+          </p>
+          <p class="text-about-hero-section">
+            Prolegals – надійний бізнес-партнер, що підтверджується стабільним
+            співробітництвом з міжнародними юридичними фірмами, довірою великих
+            українських і міжнародних компаній, визнанням професійних рейтингів.
+          </p>
+        </div>
+        <ul class="experience-about-list">
+          <li class="experience-about-list__item">
+            <span class="icon-flag experience-icon"></span>
+            <span class="experience-number">10+</span>
+            <p class="experience-text">років релевантного досвіду</p>
+          </li>
+          <li class="experience-about-list__item">
+            <span class="icon-bag experience-icon"></span>
+            <span class="experience-number">30+</span>
+            <p class="experience-text">
+              активних клієнтів, які довіряють нам свої доручення щомісячно
+            </p>
+          </li>
+          <li class="experience-about-list__item">
+            <span class="icon-star experience-icon"></span>
+            <span class="experience-number">500+</span>
+            <p class="experience-text">годин роботи «pro bono» щорічно</p>
+          </li>
+        </ul>
+      </div>
+      <picture class="team-about-photo">
+        <source media="(min-width:960px)" srcset="
+              ./images/team/desk/team.webp    1x,
+              ./images/team/desk/team_2x.webp 2x
+            " type="image/webp" />
+        <source media="(min-width:960px)" srcset="
+              ./images/team/desk/team.jpg    1x,
+              ./images/team/desk/team_2x.jpg 2x
+            " type="image/jpeg" />
+        <source srcset="./images/team/team.webp 1x, ./images/team/team_2x.webp 2x" type="image/webp" />
+        <source srcset="./images/team/team.jpg 1x, ./images/team/team_2x.jpg 2x" type="image/jpeg" />
+        <img src="./images/team/desk/team.jpg" alt="фото группы людей" class="team-about-photo" />
+      </picture>
+      <div class="container">
+        <div class="flex-hero-section-about">
+          <div class="flex-element2-hero-section-about">
+            <p class="text-about-hero-section">
+              Історично незмінна юридична професія почала переформатовуватись в
+              останні роки. Клієнти це відчувають, але юридичні фірми все ще
+              опираються еволюції. Клієнти потребують зручності, простоти,
+              прозорої оплати. Google, IBM WatsОn, Symantec Clearwell доводять, що
+              технологічна революція в юридичних послугах розпочалася і стала
+              неминучою.
+            </p>
+            <p class="text-about-hero-section">
+              Якість — це те, про що ми піклуємося найбільше.
+            </p>
+            <p class="text-about-hero-section">
+              Все просто. Якщо ви не задоволені нашою роботою, ми повернемо гроші.
+              Ми довіряємо нашим клієнтам. І ми хочемо, щоб клієнти нам теж
+              довіряли.
+            </p>
+          </div>
+          <h2 class="title-hero-section">
+            Якість — це те, про що ми піклуємося найбільше.
+          </h2>
+        </div>
+      </div>
+      <div class="achievments-block">
+        <h3 class="achievments-block-title">Досягнення</h3>
+        <ul class="achievments-block-list d-flex justify-content-between">
+          <li class="achievments-block-list__item">
+            <picture class="achievments-block-img">
+              <source media="(min-width:960px)" srcset="
+                ./images/achievments/legal/desk/legal.webp   1x,
+                      ./images/achievments/legal/desk/legal_2x.webp 2x
+                    " type="image/webp" />
+              <source media="(min-width:960px)" srcset="
+                ./images/achievments/legal/desk/legal.jpg    1x,
+                ./images/achievments/legal/desk/legal_2x.jpg 2x
+                    " type="image/jpeg" />
+              <source srcset="./images/achievments/legal/legal.webp 1x, ./images/achievments/legal/legal_2x.webp 2x"
+                type="image/webp" />
+              <source srcset="./images/achievments/legal/legal.jpg 1x, ./images/achievments/legal/legal_2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/achievments/legal/desk/legal.jpg" alt="надпись The legal 500"
+                class="achievments-block-img" />
+            </picture>
+          </li>
+          <li class="achievments-block-list__item">
+            <picture class="achievments-block-img">
+              <source media="(min-width:960px)" srcset="
+                ./images/achievments/awards/desk/awards.webp    1x,
+                ./images/achievments/awards/desk/awards_2x.webp 2x
+                    " type="image/webp" />
+              <source media="(min-width:960px)" srcset="
+                ./images/achievments/awards/desk/awards.jpg    1x,
+                ./images/achievments/awards/desk/awards_2x.jpg 2x
+                    " type="image/jpeg" />
+              <source srcset="./images/achievments/awards/awards.webp 1x, ./images/achievments/awards/awards_2x.webp 2x"
+                type="image/webp" />
+              <source srcset="./images/achievments/awards/awards.jpg 1x, ./images/achievments/awards/awards_2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/achievments/awards/desk/awards.jpg" alt="legal awards 2017"
+                class="achievments-block-img" />
+            </picture>
+          </li>
+          <li class="achievments-block-list__item d-none d-lg-block">
+            <picture class="achievments-block-img">
+              <source
+                srcset="./images/achievments/ledear/desk/ledear.webp 1x, ./images/achievments/ledear/desk/ledear_2x.webp 2x"
+                type="image/webp" />
+              <source
+                srcset="./images/achievments/ledear/desk/ledear.jpg 1x, ./images/achievments/ledear/desk/ledear_2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/achievments/ledear/desk/ledear.jpg" alt="лідеру ринку 2017"
+                class="achievments-block-img" />
+            </picture>
+          </li>
+          <li class="achievments-block-list__item d-none d-lg-block">
+            <picture class="achievments-block-img">
+              <source
+                srcset="./images/achievments/ulf2017/desk/ufl2017.webp 1x, ./images/achievments/ulf2017/desk/ufl2017_2x.webp 2x"
+                type="image/webp" />
+              <source
+                srcset="./images/achievments/ulf2017/desk/ufl2017.jpg 1x, ./images/achievments/ulf2017/desk/ufl2017_2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/achievments/ulf2017/desk/ufl2017.jpg" alt="Ukrainian law firms"
+                class="achievments-block-img" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <ul class="experience-bullets padding-bottom-0">
+        <li class="experience-bullets__item">
+          <button class="experience-bullets_button " aria-label="first slide experience"></button>
+        </li>
+        <li class="experience-bullets__item">
+          <button class="experience-bullets_button" aria-label="second slide experience"></button>
+        </li>
+        <li class="experience-bullets__item">
+          <button class="experience-bullets_button" aria-label="third slide experience"></button>
+        </li>
+        <li class="experience-bullets__item  d-xl-none">
+          <button class="experience-bullets_button" aria-label="fourth slide experience"></button>
+        </li>
+        <li class="experience-bullets__item  d-xl-none">
+          <button class="experience-bullets_button" aria-label="fourth slide experience"></button>
+        </li>
+        <li class="experience-bullets__item  d-xl-none">
+          <button class="experience-bullets_button" aria-label="fourth slide experience"></button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="home-page-footer margin-top-0">
+    <div class="container d-flex direction-column">
+      <div class="address-wrap-desk">
+        <div class="address-wrap d-flex">
+          <p class="footer-address">Одеса, Адміральський пр., 3</p>
+          <a href="" class="footer-link-map" aria-label="відкрити адресу на мапі">Подивитися на мапі</a>
+        </div>
+        <p class="footer-copyright d-none d-lg-block">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+      </div>
+      <ul class="footer-list">
+        <li class="footer-list_item">
+          <span class="icon-facebook footer-icon"></span>
+        </li>
+        <li class="footer-list_item">
+          <a href="tel:+380503901591" class="footer-link-tel"> +38 (050) 390 15 91</a>
+        </li>
+        <li class="footer-list_item">
+          <a href="mailto:contact@hlegals.net" class="footer-link-mail">contact@hlegals.net</a>
+        </li>
+      </ul>
+      <p class="footer-copyright d-xl-none-lg">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+    </div>
+  </footer>
+  <div class="modal fade" id="nav_modal" tabindex="-1" aria-label="Навігація" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="modal-nav-close-button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__list-item">
+                <a href="./about.html" class="mobile-nav__link"> про нас</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./services.html" class="mobile-nav__link">
+                  послуги</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./team.html" class="mobile-nav__link">команда</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./publications.html" class="mobile-nav__link">
+                  публікації</a>
+              </li>
+              <li class="mobile-nav__list-item">
+                <a href="./contact.html" class="mobile-nav__link">контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./bootstrap/js/dist/util.js"></script>
+  <script src="./bootstrap/js/dist/modal.js"></script>
 </body>
+
 </html>
